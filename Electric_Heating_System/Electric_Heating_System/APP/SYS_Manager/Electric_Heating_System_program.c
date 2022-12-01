@@ -159,11 +159,11 @@ u32 SYS_u32GetTempReading(void)
 	
 	//Getting the average
 	u32 average_temp = 0;
-	for (int i = 0; i < Count; i++)
+	for (int i = 0; i < 10; i++)
 	{
 		average_temp += Temp_History[i];
 	}
-	average_temp /= Count;
+	average_temp /= 10;
 	return average_temp;
 		
 }
